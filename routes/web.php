@@ -17,11 +17,11 @@ use App\Models\Member;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/members', [MemberController::class, 'index'])->name('members');
+Route::get('/', [MemberController::class, 'index'])->name('members');
 Route::get('/members/register', [MemberController::class, 'register']);
 Route::post('/members/add_register', [MemberController::class, 'add_register']);
 Route::get('/members/update{id}', [MemberController::class, 'update']);
