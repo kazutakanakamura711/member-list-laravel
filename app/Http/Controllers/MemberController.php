@@ -38,7 +38,7 @@ class MemberController extends Controller
         ];
         //Memberモデルでmembersテーブルにインサート
         Member::insert($data);
-        return redirect('/members');
+        return redirect('/');
     }
 
     public function update($id)
