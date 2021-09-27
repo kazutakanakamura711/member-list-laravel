@@ -1,0 +1,140 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body h1 {
+  color: #e74c3c;
+  animation: tx-color 4s infinite;
+  -webkit-animation: tx-color 4s infinite;
+}
+@-webkit-keyframes tx-color {
+  0% {
+    color: #e74c3c;
+  }
+  20% {
+    color: #f1c40f;
+  }
+  40% {
+    color: #1abc9c;
+  }
+  60% {
+    color: #3498db;
+  }
+  80% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #e74c3c;
+  }
+}
+@keyframes tx-color {
+  0% {
+    color: #e74c3c;
+  }
+  20% {
+    color: #f1c40f;
+  }
+  40% {
+    color: #1abc9c;
+  }
+  60% {
+    color: #3498db;
+  }
+  80% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #e74c3c;
+  }
+}
+body p {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3", sans-serif;
+  text-align: center;
+  margin-top: 150px;
+  color: #fff;
+}
+
+h1 {
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+#name,
+#phone,
+#email {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 8%;
+}
+
+.name {
+  margin: 2%;
+}
+.name:hover {
+  color: #e8ffd1;
+  transition: 0.3s;
+}
+
+.phone {
+  margin: 2%;
+}
+.phone:hover {
+  color: #ffffd1;
+  transition: 0.3s;
+}
+
+.email {
+  margin: 2%;
+}
+.email:hover {
+  color: #ffe8d1;
+  transition: 0.3s;
+}
+
+.submit {
+  text-align: center;
+}
+.submit button {
+  margin: 2%;
+  border: none;
+  letter-spacing: 2px;
+  background-color: #3fcae2;
+  padding: 1%;
+}
+.submit button:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  transition: 0.3s;
+}
+
+.delete {
+  text-align: center;
+}
+.delete button {
+  border: none;
+  letter-spacing: 2px;
+  background-color: red;
+  padding: 1%;
+}
+.delete button:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  transition: 0.3s;
+}
+
+h2 {
+  text-align: center;
+  font-family: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+}
+
+.error {
+  color: red;
+}
+/*# sourceMappingURL=register.css.map */

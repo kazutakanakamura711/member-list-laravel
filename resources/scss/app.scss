@@ -1,0 +1,83 @@
+@use '../scss/_variable';
+@use '../scss/_anime';
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include anime.gradation();
+}
+
+h1 {
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin: 0 auto;
+
+    th {
+        letter-spacing: 8px;
+    }
+
+    td,
+    th {
+        padding: 10px;
+        text-align: center;
+
+        &:first-of-type {
+            background: #b2ffd8;
+        }
+
+        &:nth-of-type(1) {
+            background: variable.$id-color;
+        }
+
+        &:nth-of-type(2) {
+            background: variable.$name-color;
+        }
+
+        &:nth-of-type(3) {
+            background: variable.$phone-color;
+        }
+
+        &:nth-of-type(4) {
+            background: variable.$email-color;
+        }
+    }
+}
+
+.tableB:hover {
+    transition: .3s;
+    transform: scale(1.2,1.2);
+}
+
+.register {
+    text-align: center;
+    letter-spacing: 8px;
+    a {
+        text-decoration: none;
+        margin: 2% 0;
+        color: blue;
+        cursor: pointer;
+        display: inline-block;
+        &:hover {
+            transform: scale(1.2, 1.2);
+            transition: .3s;
+            opacity: .5;
+        }
+    }
+}
+
+.updateBtn {
+    border-bottom: solid 2px red;
+    cursor: pointer;
+    &:hover {
+        opacity: .5;
+        transition: .3s;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
