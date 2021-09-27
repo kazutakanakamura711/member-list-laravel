@@ -19,7 +19,7 @@ class CreateMembersTable extends Migration
             $table->integer('phone');
             $table->string('email');
             $table->timestamps();
-            $table->integer('is_delete');
+            $table->integer('is_delete')->default(0);
         });
     }
 
