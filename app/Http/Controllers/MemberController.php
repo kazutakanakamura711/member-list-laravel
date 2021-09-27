@@ -68,7 +68,7 @@ class MemberController extends Controller
         ];
         //Memberモデルでmembersテーブルにインサート
         Member::where('id', $id)->update($data);
-        return redirect('/members');
+        return redirect('/');
     }
     public function delete_member($id)
     {
@@ -76,6 +76,6 @@ class MemberController extends Controller
             'is_delete' => 1,
             'updated_at' => now(),
         ]);
-        return redirect('/members');
+        return redirect('/');
     }
 }
